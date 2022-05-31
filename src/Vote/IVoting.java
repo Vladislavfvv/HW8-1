@@ -6,4 +6,8 @@ public interface IVoting {
     void countVotes();
     void soutVoters();
     void sout2();
+
+    int toCount();
+
+    int toString(int vot);
 }

@@ -12,15 +12,19 @@ public class Main {
         //votes[0] = new Vote("user1", "pass1", "1", "1",1);
         //votes[1] = new Vote("user2", "pass2", "1", "2",2);
        IVoting vote1 = new Vote("user1", "pass1", "1", "1",1);
-        IVoting vote2 = new Vote("user2", "pass2", "1", "2",2);
+        IVoting vote2 = new Vote("user2", "pass2", "2", "2",2);
+        IVoting vote3 = new Vote("user3", "pass3", "3", "3",3);
+
         //IVoting vote2 = new Vote("user2", "pass2", "1", "2",2);
         IVoting iVoting = new Vote();
         iVoting.registration(vote1);
         iVoting.registration(vote2);
+        iVoting.registration(vote3);
 //
         iVoting.soutVoters();
        System.out.println("/////////////////////");
-        iVoting.sout2();
+        //iVoting.sout2();
+        iVoting.countVotes();
 
 
     }
